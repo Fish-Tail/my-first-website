@@ -1,16 +1,23 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
 	background-color:  #666666;
+	margin-top: auto;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
+	width: 1200px;
 	font-family: Helvetica, Arial, sans-serif;
 }
 
 
 #container {	
 	background-color: #aaa;
-	color: white;
+	color: black;
 	padding: 10px;
+	margin-top: 10px;
 }
 #content {
 	padding: 15px;
@@ -18,6 +25,7 @@ body {
 }
 #nav{
 	width: 150px;
+
 	float: left;
 
 }
@@ -26,14 +34,29 @@ a {
 }
 
 #main{
-	width: 600px;
+	
 	float: left;
+	margin-bottom: 20px;
+}
+#image {
+	clear: both;
+	width: 100%;
+	height: 350px;
+	background-color: black;
+
+
+
 }
 
 #header {
-	background-color: black;
+	
+	margin-top: 10px; 
+
+	background-color: white;
+	color: black;
 	text-align: center;
-	padding: 20px;
+	padding: 40px;
+
 
 
 }
@@ -42,19 +65,96 @@ a {
 	clear: both;
 	text-align: right;
 	padding: 10px;
-	background-color: #aaaacc
+	background-color: #aaaacc;
+		margin-top: 40px; 
+
 
 }
 
-#nav .selected {
-	font-weight: bold;
-}
 
-#nav ul {
+/* horizontal menu properly done */
+
+
+ul#navbar1 {
+	
+	padding: 5px;
 	list-style-type: none;
+	margin-bottom: 44px;
+
+}
+ul#navbar1 li {
+	width: 150px;
+	position: relative;
+	
+	text-align: center;
+	float: left;
+	margin-right: 6px;
 }
 
-h1,h2,h3,h4{
-	margin: 0;
+ul#navbar1 .sub1, .sub2 {
+
+		list-style-type: none;
+		font-size: 10pt;
+
+
+
+}
+ul#navbar1 .sub1 li {
+	text-align: center;
+	 /*display: block;*/
+}
+ul#navbar1 a {
+	display: block;
+	width: 150px;
+	height: 40px;
+	background-color: #ccc;
+	line-height: 40px;
+	border: 1px solid blue;
+	border-radius: 7px;
+	margin-top: 2px;
+
+
+	
 }
 
+
+ul#navbar1 li:hover > a {
+	background-color: #666666;
+	color: white;
+}
+ul#navbar1 li:hover a:hover {
+	background-color: #333;
+	color: white;
+}
+
+ul#navbar1 ul.sub1 {
+	display: none;
+	position: absolute;
+}
+ul#navbar1 ul.sub2 {
+	display: none;
+	position: absolute;
+	left: 151px;
+	top: 0px;
+}
+
+ul#navbar1 li:hover .sub1 {
+	display: block;
+}
+ul#navbar1 .sub1 li:hover .sub2 {
+	display: block;
+}
+
+.darrow {
+	position: absolute;
+	font-size: 12px;
+	top: 15px;
+	right: 15px;
+
+}
+.rarrow {
+	position: absolute;
+	top: 12px;
+	right: 15px;
+
+}
