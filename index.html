@@ -3,9 +3,52 @@
 <head>
 	<title>My First Website </title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		.mySlides{display: none;}
+	</style>
 </head>
 <body>
+<div class = "top">
+	<ul id ="navbar1">
+		<li ><a href="#">Home</a></li>
+		<li><a href="#">Band</a><span class="darrow">&#9660</span>
+			<ul class="sub1">
+				<li><a href="#">Members</a></li>
+				<li><a href="#">Fans</a></li>
+				<li><a href="#">Instruments</a></li>
+
+			</ul>	
+		</li>
+		<li><a href="#">Tour</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">More</a> <span class="darrow">&#9660</span>
+			<ul class="sub1">
+				<li><a href="#">Merchandise</a></li>
+				<li><a href="#">Extras</a></li>
+				<li><a href="#">Media</a><span class="rarrow">&#9654</span>
+					<ul class="sub2">
+						<li><a href="#">Images</a></li>
+						<li><a href="#">Songs</a></li>
+						<li><a href="#">Videos</a></li>
+
+			</ul>	
+
+				</li>
+
+			</ul>			
+		</li>
+	</ul>
 <div id = "container">
+<div class="mySlides">
+<img src="kind-people.jpg" style="width: 100%">
+</div>
+<div  class="mySlides">
+<img src="cropped-sunrise.jpg" style="width: 100%">
+</div>
+<div  class="mySlides">
+<img src="header-sunrise.jpg" style="width: 100%">
+</div>
+
 	<div id = "header">
 	<h1> My Website </h1>
 
@@ -42,5 +85,23 @@
 
 
 </div>
+<script type="text/javascript">
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+</script>
 </body>
+
 </html>
