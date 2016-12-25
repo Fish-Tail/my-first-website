@@ -2,22 +2,25 @@
 	margin: 0px;
 	padding: 0px;
 }
-
+@font-face{
+	font-family: "calibri";
+	src: url("../fonts/calibri.ttf");
+}
 body {
-	background-color:  #666666;
-	margin-top: auto;
+	background-color:  black;
+	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1200px;
-	font-family: Helvetica, Arial, sans-serif;
+	width: 100%;
+	font-family: calibri, Helvetica, Arial, sans-serif;
 }
 
 
 #container {	
-	background-color: #aaa;
-	color: black;
+	background-color: black;
+	color: white;
 	padding: 10px;
-	margin-top: 10px;
+	margin-top: 50px;
 }
 #content {
 	padding: 15px;
@@ -37,6 +40,7 @@ a {
 	
 	float: left;
 	margin-bottom: 20px;
+
 }
 #image {
 	clear: both;
@@ -52,7 +56,7 @@ a {
 	
 	margin-top: 10px; 
 
-	background-color: white;
+	
 	color: black;
 	text-align: center;
 	padding: 40px;
@@ -71,15 +75,50 @@ a {
 
 }
 
+#nav .selected {
+	font-weight: bold;
+}
 
-/* horizontal menu properly done */
+#nav ul {
+	list-style-type: none;
+}
 
+h1,h2,h3,h4{
+	margin: 0;
+}
+
+.navbar {
+	text-align: center;
+}
+
+.navbar ul {display: block; text-decoration: none;}
+
+.navbar li {list-style-type: none; float: left;}
+.padding-large {padding: 20px 20px;}
+.hover-none:hover {box-shadow: none; background-color: transparent;}
+.hover-text-green:hover {color: #4CAF50;}
+.hover-grey:hover {color: white;background-color: grey;}
+
+.card {{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}}
+
+.dropdown:hover, .dropdown {position: static;}
+
+
+/*========================================
+*//* horizontal menu properly done */
+
+.top{
+	margin: 0dp;
+	padding: 0dp;
+}
 
 ul#navbar1 {
 	
 	padding: 5px;
 	list-style-type: none;
 	margin-bottom: 44px;
+	position: fixed;
+	top: 0px;
 
 }
 ul#navbar1 li {
@@ -109,7 +148,7 @@ ul#navbar1 a {
 	height: 40px;
 	background-color: #ccc;
 	line-height: 40px;
-	border: 1px solid blue;
+	border: 1px solid black;
 	border-radius: 7px;
 	margin-top: 2px;
 
@@ -157,4 +196,352 @@ ul#navbar1 .sub1 li:hover .sub2 {
 	top: 12px;
 	right: 15px;
 
+}
+
+/*this is the band section*/
+
+#breaker {
+	clear: both;
+	width: 100%;
+	height:100px;
+
+}
+
+#Band {
+	background-color: white;
+	font-family: "Verdana";
+	padding: 10px;
+	color: black;
+
+}
+#Band h2{
+	text-align: center;
+	padding: 50px;
+}
+#Band p{
+	text-align: center;
+	padding: 5px;
+}
+
+.small-breaker {
+	clear: both;
+	width: 100%;
+	height:50px;
+
+}
+
+#container h3 {
+	padding: 10px;
+}
+
+#member1{
+	float: left;
+	width: 33%;
+	text-align: center;
+
+}
+#member2{
+
+	float: left;
+	width: 33%;
+	text-align: center;
+	
+}
+#member3{
+
+	float: left;
+	width: 33%;
+	text-align: center;
+	
+}
+.memberimage{
+	padding-top: 5px;
+	width: 80%;
+	height: 80%;
+}
+
+
+/*here starts the tour page*/
+
+#Tour {
+	background-color: white;
+	padding: 4px;
+	color: black;
+}
+
+#Tour h2,p{
+	padding: 20px;
+	text-align: center;
+}
+#Tour p{
+	opacity: .5;
+}
+
+#Tour ul{
+	list-style-type: none;
+	border: 1px solid grey;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Tour ul li {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-style: dotted;
+	color: grey;
+
+}
+
+.soldout {
+	background-color: red;
+	color: white;
+	margin-left: 20px;
+	padding: 4px;
+
+}
+
+.notsold {
+	background-color: black;
+	color: white;
+	text-align: end;
+	padding: 4px;
+	border-radius: 40%;
+	margin-left: 30px;
+
+}
+#availdates p{
+	padding: 10px;
+	opacity: 1;
+
+}
+#availdates {
+	width: 78%;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#date1 {
+	float: left;
+	width: 32%;
+
+	text-align: center;
+	
+	padding: 2px;
+
+
+}
+#date2 {
+	float: left;
+		width: 32%;
+
+	text-align: center;
+	padding: 2px;
+}
+
+#date3 {
+	float: left;
+		width: 32%;
+
+	text-align: center;
+	padding: 2px;
+
+	
+}
+
+.venueimage {
+	width: 100%;
+	}
+.venueimage:hover {
+	opacity: .75;
+	}
+
+
+
+#Contact{
+	background-color: white;
+	padding: 30dp;
+}
+
+.grey {
+	color: grey;
+}
+
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+.center{
+	text-align: center;
+}
+.marginleft20{
+	padding-left: 10px;
+	margin-left: 20px;
+}
+
+.buybutton{
+	float: left;
+	margin-left: 10px;
+	padding: 5px;
+	background-color: black;
+	color: white;
+
+}
+.buybutton:hover{
+	
+	box-shadow: 4px 4px 4px grey;
+}
+
+/*Now here starts the ticket popup buy option */
+
+#ticketModal{
+	
+	
+	
+	
+	
+	
+
+	z-index:3;
+	padding-top:100px;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	overflow:auto;
+	background-color:rgb(0,0,0);
+	background-color:rgba(0,0,0,0.4);
+
+
+
+
+}
+
+#ticketMainContainer {
+	position:relative;padding:0;outline:0;width:600px;
+	margin:auto;
+	-webkit-animation:animatetop 1s;
+	animation:animatetop 1s;
+	background-color: #55f;
+
+}
+@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
+.ticketHeader{
+	background-color: black;
+	opacity: .5;
+	padding: 20px;
+	color: white;
+}
+.closeTicketX{
+	float: right;
+	
+	padding: 4px;
+
+}
+.payButton {
+	margin-top: 10px;
+	width: 550px;
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: auto;
+
+}
+.closeButton{
+	margin-top: 10px;
+	float: left;
+	padding: 10px;
+	background-color: black;
+	color:white;
+	opacity: .7;
+}
+
+/*here starts the cotact page style*/
+
+#Contact {
+	padding: 10px;
+	padding-top: 40px;
+	color: black;
+}
+#Contact p {
+	color: grey;
+	font-size: 10pt;
+
+}
+
+#contactContent{
+	width:100%;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:center;
+}
+#contactContent p{
+	color: black;
+	text-align: left;
+	padding: 2px;
+	font-size: 12pt;
+}
+
+#col1 {
+
+float: left;
+width: 32%;
+  height:200px;
+text-align: center;
+padding: 2px;
+}
+#col2 {
+float: left;
+width: 52%;
+  height:200px;
+text-align: center;
+padding: 2px;
+ 
+}
+
+#formRow {
+	width:100%;
+  margin:0;
+  padding-bottom: 4px;
+  display:flex;
+  justify-content:space-around;
+}
+
+#formName, #formEmail {
+float: left;
+width: 48%;
+padding: 1px;
+margin:1px;
+
+
+}
+.formInput {
+	width: 95%;
+	height: 20px;
+	padding: 4px;
+	
+
+}
+.formInputMessage {
+	width: 96%;
+	height: 30px;
+	padding: 4px;
+	margin-left: 3px;
+}
+
+.formButton {
+	margin:5px;
+	padding: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: black;
+	color: white;
+	float: right;
 }

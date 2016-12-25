@@ -5,22 +5,23 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css">
 		.mySlides{display: none;}
+		.ticketModal{display: none;}
 	</style>
 </head>
 <body>
 <div class = "top">
 	<ul id ="navbar1">
 		<li ><a href="#">Home</a></li>
-		<li><a href="#">Band</a><span class="darrow">&#9660</span>
+		<li><a href="#Band">Band</a><span class="darrow">&#9660</span>
 			<ul class="sub1">
-				<li><a href="#">Members</a></li>
+				<li><a href="#member1">Members</a></li>
 				<li><a href="#">Fans</a></li>
 				<li><a href="#">Instruments</a></li>
 
 			</ul>	
 		</li>
-		<li><a href="#">Tour</a></li>
-		<li><a href="#">Contact</a></li>
+		<li><a href="#Tour">Tour</a></li>
+		<li><a href="#Contact">Contact</a></li>
 		<li><a href="#">More</a> <span class="darrow">&#9660</span>
 			<ul class="sub1">
 				<li><a href="#">Merchandise</a></li>
@@ -38,43 +39,205 @@
 			</ul>			
 		</li>
 	</ul>
-<div id = "container">
-<div class="mySlides">
-<img src="kind-people.jpg" style="width: 100%">
-</div>
-<div  class="mySlides">
-<img src="cropped-sunrise.jpg" style="width: 100%">
-</div>
-<div  class="mySlides">
-<img src="header-sunrise.jpg" style="width: 100%">
 </div>
 
-	<div id = "header">
-	<h1> My Website </h1>
+<div id = "container">
+		<div class="mySlides">
+		<img src="kind-people.jpg" style="width: 100%">
+		</div>
+		<div  class="mySlides">
+		<img src="cropped-sunrise.jpg" style="width: 100%">
+		</div>
+		<div  class="mySlides">
+		<img src="header-sunrise.jpg" style="width: 100%">
+		</div>
+
+		<div id = "header">
+		<h1> My Website </h1>
+
+		</div>
+
+			<div id = "content">
+			<div id = "nav">
+			<h3> Navigation </h3>
+			<ul>
+			<li> <a class = "selected" href="">Home</a></li>
+			<li> <a href="">About</a></li>
+			<li> <a href="">Contact</a></li>
+
+
+			</ul>
+
+			</div>
+
+			<div id = "main">
+
+			<h2 class="center"> Dhunga The Rock </h2>
+			<p> This is my first post </p>
+			<p> lorem ipsum </p>
+			<p> My name is bill. I am a learner. I am a programmer. I need to work hard to become good at this. Be like me. Be like bill. </p><p> My name is bill. I am a learner. I am a programmer. I need to work hard to become good at this. Be like me. Be like bill. </p><p> My name is bill. I am a learner. I am a programmer. I need to work hard to become good at this. Be like me. Be like bill. </p><p> My name is bill. I am a learner. I am a programmer. I need to work hard to become good at this. Be like me. Be like bill. </p><p> My name is bill. I am a learner. I am a programmer. I need to work hard to become good at this. Be like me. Be like bill. </p><p> My name is bill. I am a learner. I am a programmer. I need to work hard to become good at this. Be like me. Be like bill. </p>
+			</div>
 
 	</div>
-
-	<div id = "content">
-		<div id = "nav">
-		<h3> Navigation </h3>
-		<ul>
-		<li> <a class = "selected" href="">Home</a></li>
-		<li> <a href="">About</a></li>
-		<li> <a href="">Contact</a></li>
-
-
-		</ul>
-
+		<div id = "breaker">
 		</div>
 
-		<div id = "main">
+	<div id = "Band">
+		<h2> THE BAND </h2>
+		<p> This is the band section </p>
+		<p> lorem ipsum </p>
+		<p> My name is bill. I am a learner. I am a programmer. I need to work hard to become good at this. Be like me. Be like bill. </p><p> My name is bill. I am a learner. I am a programmer. I need to work hard to become good at this. Be like me. Be like bill. </p><p> My name is bill. I am a learner. I am a programmer. I need to work hard to become good at this. Be like me. Be like bill. </p>
+		</div>
 
-		<h2> Content</h2>
+		<div class="small-breaker" >
+		</div>
+
+
+		<div id = "member1">
+		<h3> Member 1 </h3>
 		<p> This is my first post </p>
 		<p> lorem ipsum </p>
-		<p> My name is bill. I am a learner. I am a programmer. I need to work hard to become good at this. Be like me. Be like bill. </p>
+		<img class="memberimage"  src="Jonathan.jpg">
+		
 		</div>
 
+		<div id = "member2">
+
+		<h3> Member 2</h3>
+		<p> This is my first post </p>
+		<p> lorem ipsum </p>
+		<img class="memberimage" src="Lars.jpg">
+		
+		</div>
+			<div id = "member3">
+
+		<h3> Member 3</h3>
+		<p> This is my first post </p>
+		<p> lorem ipsum </p>
+		<img class="memberimage" src="member1.jpg">
+		
+	</div>
+
+	<div id = "breaker">
+	</div>
+
+
+
+	<div id="Tour">
+		<h2>
+		TOUR DATES
+		</h2>
+		<p>Remember to book you tickets</p>
+
+		<ul >
+			<li>September<span class="soldout">Sold out</span></li>
+			<li>October<span class="soldout">Sold out</span></li>
+			<li>November<span class="notsold">3</span></li>
+			
+		</ul>
+		<div class="small-breaker"></div>
+
+		<div id ="availdates">
+
+			<div id="date1">
+				
+				<img class = "venueimage" src="newyork.jpg">
+											
+				<p><b>New York</b></p>
+				<p class = "grey left"> Fri 27 Nov 2016 </p>
+				<p class="left">Amazing concert at this place. Book your tickets as fast as possible.</p>
+
+				<BUTTON class="buybutton" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</BUTTON>
+							
+			</div>
+				
+
+			<div id="date2">
+				
+					<img class = "venueimage" src="paris.jpg">
+									
+					<p><b>Paris</b></p>	
+					<p class = "grey left"> Fri 27 Dec 2016 </p>
+					<p class="left">Amazing concert at this place. Book your tickets as fast as possible.</p>
+					<BUTTON class="buybutton" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</BUTTON>
+				
+			</div>
+				
+			<div id="date3">
+				
+					<img class = "venueimage" src="sanfran.jpg">
+								
+					<p><b>San Fransisco</b></p>	
+					<p class = "grey left"> Sat 21 Jan 2017 </p>
+					<p class="left">Amazing concert at this place. Book your tickets as fast as possible.</p>
+					<BUTTON class="buybutton"  onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</BUTTON>
+			</div>
+			
+		</div>
+
+		
+	</div>
+	<div id="ticketModal" class="ticketModal" >
+		<div id="ticketMainContainer">
+			<header class="ticketHeader">
+			<span class="closeTicketX right" onclick="document.getElementById('ticketModal').style.display='none'">(x)</span>
+				<h2 class="center">Tickets</h2>
+			</header>
+
+			<div id="ticketContent">
+				<p class="left"><label >Tickets, $10 per person</label></p>
+				<input class="marginleft20 grey" type="text" name="ticketquantity" placeholder="How many tickets?">
+				<p class="left"><label >Send to whom?</label></p>
+				<input class="marginleft20 grey" type="Email" name="ticketquantity" placeholder="Email Address">
+				<button class="payButton">Pay</button>
+				<button class="closeButton" onclick="document.getElementById('ticketModal').style.display='none'">Close</button>
+				<p class="right">Need <a href="#">help?</a></p>
+			</div>
+
+		</div>
+		
+	</div>
+	<div id = "breaker">
+	</div>
+
+	<div id = "Contact">
+	<h2 class="center"> Contact <h2>
+	<p>Fans drop a message</p>
+
+
+		<div id="contactContent">
+			<div id="col1">
+				<p>&#10021; Kathmandu, Nepal</p>
+				<p>&#9993; Email: myemail@mymail.com</p>
+				<p>&#9742; Phone: +001 123123</p>
+
+				
+			</div>
+			<div id="col2">
+				<form action="form.asp" target="_blank">
+					<div id="formRow">
+						<div id="formName">
+							<input class="formInput" type="text" placeholder="Name" required name="Name">
+						</div>
+						<div id="formEmail">
+							<input class="formInput" type="text" placeholder="Email" required name="Email">
+						</div id="formMessage">
+					</div>	
+					
+						<input class="formInputMessage" type="text" placeholder="Message" required name="Message">
+					<button class="formButton" type="submit">Send</button>
+
+				</form>
+			</div>
+
+
+		
+		</div>
+	</div>
+
+	
+	
+	<div id = "breaker">
 	</div>
 
 	<div id = "footer">
